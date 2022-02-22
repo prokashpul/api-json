@@ -10,6 +10,12 @@ loadToDo()
 function getToDo(toDoDisplay) {
     const todoList = document.getElementById('todo');
     toDoDisplay.map(toDo => {
-        console.log(toDo.title)
+        const article = document.createElement('article');
+        article.classList.add('todo');
+        article.innerHTML = `
+        <h3>${toDo.title}</h3>
+        <p> ${toDo.completed} </p>
+        `
+        todoList.appendChild(article)
     });
 }
