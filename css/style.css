@@ -1,0 +1,14 @@
+.comment {
+    background-color: blanchedalmond;
+    padding: 10px 20px;
+    border: 2px solid greenyellow;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
